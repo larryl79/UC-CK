@@ -115,8 +115,8 @@ installer() {
     printf "\n"
     printf "${GREEN}"
     printf "Updating APT repository to archives since Debian/$CODENAME is archived.\n"
-    echo "deb [trustable=yes] http://archive.debian.org/debian/ jessie main contrib non-free" > $BASEDIR/$APTDIR/sources.list
-    echo "deb [trustable=yes] http://archive.debian.org/debian-security  jessie/updates main contrib non-free" > $BASEDIR/$APTDIR/sources.list.d/security.list
+    echo "deb [trusted=yes] http://archive.debian.org/debian/ jessie main contrib non-free" > $BASEDIR/$APTDIR/sources.list
+    echo "deb [trusted=yes] http://archive.debian.org/debian-security  jessie/updates main contrib non-free" > $BASEDIR/$APTDIR/sources.list.d/security.list
 
 
     [ -f $BASEDIR/$APTDIR/sources.list.d/nodejs.list~ ] &&
