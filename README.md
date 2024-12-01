@@ -16,3 +16,7 @@ normal mode:   ubnt / ubnt       (until you don't override in contorller setting
 
 boot.txt:
 shows a boot progress on console (UART) from switch on.
+
+boot_recovery.txt:
+shows a boot progress on console (UART) from switch on into a recovery mode.
+
