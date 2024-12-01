@@ -1,0 +1,80 @@
+[PLL] CPU: 1040000Khz; MEM: 133250Khz; BUS: 273000Khz
+
+preloader v1.1.3bfc257 -- 20171107-152727
+
+[EMI] [Vcore] 0x21E=0x48, 0x220=0x48; [Vmem] 0x554=0x0
+[EMI] PCDDR3 DRAM Clock = 1600012 KHz, MEMPLL MODE = 2
+[DRAMC] calibration took 47567605 CPU cycles
+[MEM] complex R/W mem test pass
+[DRAMBUF] DRAM size: 80000000, structure size: 1A5478
+[BLDR] unknown received: '
+
+
+oading UBOOT to address 0x81E00000...
+[PART] name: 'UBOOT'; id: 8;  start block 0x200; size: 0x20D295 (blks 0x80000);
+[PART] Image name: LK; addr: FFFFFFFFh; size: 207536; magic: 58881688h
+[PART] load "UBOOT" from 0x0000000000040200 (dev) to 0x81E00000 (mem) [SUCCESS]
+[PART] load speed: 14476KB/s, 207536 bytes, 14ms
+[PLFM] boot time: 1399ms
+
+U-Boot 2015.07-ubnt-g82d7844 (Sep 11 2015 - 23:56:13 -0700)
+
+DRAM:  2 GiB
+WARNING: Caches not enabled
+Flash: 1 MiB
+In:    serial
+Out:   serial
+Err:   serial
+Net:   eth0
+
+  *** U-Boot Boot Menu ***
+
+     0. Autoboot
+     1. Boot OS
+     2. Boot Recovery OS
+     3. Reset to Factory Defaults
+     U-Boot console
+
+
+  Press UP/DOWN to move, ENTER to select
+MMC read: dev # 0, block # 68096, count 1 ... 1 blocks read: OK
+MMC read: dev # 0, block # 68096, count 11485 ... 11485 blocks read: OK
+## Booting kernel from Legacy Image at 84000000 ...
+   Image Name:   Linux-3.10.20
+   Image Type:   ARM Linux Kernel Image (uncompressed)
+   Data Size:    5879992 Bytes = 5.6 MiB
+   Load Address: 80008000
+   Entry Point:  80008000
+   Verifying Checksum ... OK
+   Loading Kernel Image ... OK
+
+Starting kernel ...
+
+
+
+CloudKey Recovery is starting up...
+  mounting proc...
+  mounting sysfs...
+  mounting run/tmp...
+  mounting devpts...
+  running /init.d:
+        /init.d/00-leds-start
+        /init.d/01-mkdirs
+        /init.d/10-ifconfig
+        /init.d/50-fwversion
+Boottime: 2.69s
+Eecuting /sbin/init...
+
+
+Please press Enter to activate this console.
+RECOVERY-MODE login: root
+Password:
+                .--.__
+  ______ __ .--(    ) )-.   __ __
+ |      |  (._____.__.___)_|  |  |__ _____ __ __
+ |   ---|  ||  _  |  |  |  _  |    <|  -__|  |  |
+ |______|__||_____|_____|_____|__|__|_____|___  |
+        (c) 2015 Ubiquiti Networks, Inc.  |_____|
+
+      Welcome to the CloudKey Recovery!
+RECOVERY-MODE#
