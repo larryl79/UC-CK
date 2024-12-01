@@ -7,7 +7,9 @@ If you found something about, and you can't find it here, please let me, to buil
 UART (console) seerings 115200,8,1,n,n
 
 user / password
+
 Recovery mode: root / ubnt
+
 normal mode:   ubnt / ubnt       (until you don't override in contorller settings)
 
 
