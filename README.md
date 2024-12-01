@@ -6,6 +6,11 @@ If you fot something about, and you can't ithere, please let me, to build it a c
 
 UART (console) seerings 115200,8,1,n,n
 
+user / password
+Recovery mode: root / ubnt
+normal mode:   ubnt / ubnt       (until you don't override in contorller settings)
+
+
 
 boot.txt:
 shows a boot progress on console (UART) from switch on.
