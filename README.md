@@ -21,7 +21,7 @@ boot_recovery.txt:
 shows a boot progress on console (UART) from switch on into a recovery mode.
 
 
-
+<sub>
  ls /dev/disk/by-partlabel/ -1aos
 0 lrwxrwxrwx 1 root  15 Dec  4 16:07 appdata -> ../../mmcblk0p8
 0 lrwxrwxrwx 1 root  15 Dec  4 16:07 config -> ../../mmcblk0p2
@@ -32,8 +32,9 @@ shows a boot progress on console (UART) from switch on into a recovery mode.
 0 lrwxrwxrwx 1 root  15 Dec  4 16:07 rootfs -> ../../mmcblk0p6
 0 lrwxrwxrwx 1 root  15 Dec  4 16:07 uboot -> ../../mmcblk0p1
 0 lrwxrwxrwx 1 root  15 Dec  4 16:07 userdata -> ../../mmcblk0p7     (actual rootfs)
+</sub>
 
-
+<sub>
 lsblk
 NAME         MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 mtdblock0     31:0    0   64K  1 disk
@@ -52,4 +53,5 @@ mmcblk0boot1 179:64   0    4M  1 disk
 mmcblk0rpmb  179:96   0    4M  0 disk
 mmcblk1      179:128  0 14.4G  0 disk
 └─mmcblk1p1  179:129  0 14.4G  0 part /data     ( SDCARD )
+</sub>
 
