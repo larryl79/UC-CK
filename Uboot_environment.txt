@@ -1,0 +1,44 @@
+ubnt-mtk7623> printenv
+arch=arm
+baudrate=115200
+board=ubnt-mtk7623
+board_name=ubnt-mtk7623
+boot_normal=run set_bootargs load_kernel; bootm
+boot_recovery=run set_bootargs load_recovery; bootm
+boot_reset2defaults=setenv extrabootargs reset2defaults; run boot_normal
+boot_sdcard=run load_sdcard; setenv extrabootargs bootmode=sd; run set_bootargs; bootm
+bootcmd=run boot_${bootmode}
+bootdelay=1
+bootfile=uImage-mtk7623
+bootmenu_0=0. Autoboot=run boot_${bootmode}
+bootmenu_1=1. Boot OS=run boot_normal
+bootmenu_2=2. Boot Recovery OS=run boot_recovery
+bootmenu_3=3. Reset to Factory Defaults=run boot_reset2defaults
+bootmode=normal
+cpu=armv7
+ethact=eth0
+ethaddr=78:8a:20:df:02:0e
+ipaddr=192.168.1.10
+kernelargs=console=ttyMT2,115200 root=/dev/ram quiet printk.disable_uart=1
+load_img_mmc0=mmc device 0; mmc read $(loadaddr) $(partstart) 1; image_blks 512; mmc read $(loadaddr) $(partstart) $(img_blks)
+load_kernel=setenv partstart $(partstart_kernel); run load_img_mmc0
+load_recovery=setenv partstart $(partstart_recovery); run load_img_mmc0
+load_sdcard=mmc init 1; fatload mmc 1:1 $(loadaddr) kernel
+loadaddr=0x84000000
+mtddevname=EEPROM
+mtddevnum=0
+mtdids=nor0=mtk-nor0
+mtdparts=mtdparts=mtk-nor0:0x10000(EEPROM)ro,-(EXT)
+partition=nor0,0
+partstart_kernel=0xa00
+partstart_recovery=0x10a00
+raeth.macaddr=0x78,0x8a,0x20,0xdf,0x02,0x0e
+serverip=192.168.1.3
+set_bootargs=setenv bootargs $(kernelargs) $(mtdparts) $(extrabootargs) raeth.macaddr=$(raeth.macaddr)
+soc=mt7623
+stderr=serial
+stdin=serial
+stdout=serial
+vendor=mediatek
+
+Environment size: 1582/131068 bytes
