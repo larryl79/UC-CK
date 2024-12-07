@@ -24,8 +24,6 @@ shows a boot progress on console (UART) from switch on into a recovery mode.
 
 ls /dev/disk/by-partlabel/ -1aos
 
-0 lrwxrwxrwx 1 root  15 Dec  4 16:07 appdata -> ../../mmcblk0p8
-
 0 lrwxrwxrwx 1 root  15 Dec  4 16:07 config -> ../../mmcblk0p2
 
 0 lrwxrwxrwx 1 root  15 Dec  4 16:07 data -> ../../mmcblk1p1
@@ -42,6 +40,7 @@ ls /dev/disk/by-partlabel/ -1aos
 
 0 lrwxrwxrwx 1 root  15 Dec  4 16:07 userdata -> ../../mmcblk0p7     (actual rootfs)
 
+0 lrwxrwxrwx 1 root  15 Dec  4 16:07 appdata -> ../../mmcblk0p8      ( /srv )
 
 
 lsblk
