@@ -24,13 +24,13 @@ shows a boot progress on console (UART) from switch on into a recovery mode.
 
 ls /dev/disk/by-partlabel/ -1aos
 
-0 lrwxrwxrwx 1 root  15 Dec  4 16:07 config -> ../../mmcblk0p2
+0 lrwxrwxrwx 1 root  15 Dec  4 16:07 config -> ../../mmcblk0p2       ( U-boot Configuration (environment varibles))
 
-0 lrwxrwxrwx 1 root  15 Dec  4 16:07 data -> ../../mmcblk1p1
+0 lrwxrwxrwx 1 root  15 Dec  4 16:07 data -> ../../mmcblk1p1         ( U-boot ? )
 
 0 lrwxrwxrwx 1 root  15 Dec  4 16:07 factory -> ../../mmcblk0p3
 
-0 lrwxrwxrwx 1 root  15 Dec  4 16:30 kernel -> ../../mmcblk0p4
+0 lrwxrwxrwx 1 root  15 Dec  4 16:30 kernel -> ../../mmcblk0p4        ( running kernel )
 
 0 lrwxrwxrwx 1 root  15 Dec  4 16:07 recovery -> ../../mmcblk0p5
 
